@@ -5,9 +5,13 @@ body {
     font-family: 'Archivo', sans-serif;
 }
 
-a:active {
+a:link {
     color: #808080;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 a:visited {
@@ -161,6 +165,11 @@ a {
     }
     .button {
         text-align: center;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 1.2rem;
     }
 }
 
