@@ -1,0 +1,183 @@
+/* General Formatting */
+
+body {
+    font-size: 16px;
+    font-family: 'Archivo', sans-serif;
+}
+
+a:active {
+    color: #808080;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #808080;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* banner */
+
+.banner {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.banner-main {
+    background-image: url("../img/cairnlogo.png");
+}
+
+.banner-taplist {
+    background-image: url("../img/tap_list.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.button a {
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.button {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-homebrew {
+    background-image: url("../img/homebrew2.jpg");
+    background-size: cover;
+}
+
+.carousel {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+/* button formatting */
+
+.btn {
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #5E7835;
+    color: white;
+}
+
+
+/* Content */
+
+.location {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 4rem auto;
+    flex-direction: column;
+}
+
+.location a {
+    font-size: 3rem;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 3rem;
+}
+
+.hours {
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.hours p {
+    font-family: 'Archivo', sans-serif;
+    color: #5E7835;
+}
+
+#hour {
+    text-decoration: underline;
+}
+
+
+/* Media links */
+
+.social-media {
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 0 2rem;
+}
+
+
+/* Annimation */
+
+.btn {
+    transition: background-color 1s ease;
+}
+
+.btn:hover {
+    background: transparent;
+}
+
+.social-media {
+    transition: transform 1s ease;
+}
+
+.social-media:hover {
+    transform: scale(1.3, 1.3);
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1030px) {
+    .carousel {
+        width: 100%;
+    }
+    .banner-main {
+        background-size: contain;
+    }
+    body {
+        font-size: 12px;
+    }
+    .button {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .location a {
+        font-size: 2rem;
+        margin-top: 1rem auto;
+        text-align: center;
+    }
+    .social-media {
+        width: 100%;
+        margin: 0;
+    }
+    .sm img {
+        width: 100%;
+    }
+    .button h1 {
+        font-size: 3rem;
+    }
+}
